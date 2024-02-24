@@ -1,0 +1,36 @@
+<div class="w-100 mt-5 border-top">
+    <div class="w-50 text-center mt-5">
+        <h3>Join The Paper Lovers Club</h3>
+        <h6>Get updates on what’s new</h6>
+    </div>
+    <div class="w-75 d-flex justify-content-center my-5">
+        <app-email-box class="w-50"></app-email-box>
+        <button type="submit" class="btn btn-dark w-25 mx-3 h-100 mt-4">Join</button>
+    </div>
+</div>
+<div class="w-100 border-top border-bottom my-5 d-flex justify-content-between">
+    <div class="border-right text-left w-25 p-5">
+        <h3 class="mb-4">Shop</h3>
+        <div *ngFor="let item of items; index as i">
+            <h6 class="links">{{item}}</h6>
+        </div>
+    </div>
+    <div class="border-right text-left w-25 p-5">
+        <h3 class="mb-4">Store Policy</h3>
+        <div *ngFor="let policy of policies; index as i">
+            <h6 class="links">{{policy}}</h6>
+        </div>
+    </div>
+    <div class="border-right text-left w-25 p-5">
+        <h3 class="mb-4">Opening Hours</h3>
+        <div *ngFor="let openingHour of openingHours; index as i">
+            <h6>{{openingHour}}</h6>
+        </div>
+    </div>
+    <div class="text-left w-25 p-5">
+        <h3 class="mb-4">Come Visit</h3>
+        <div *ngFor="let detail of address | orderedKeys: addressKeys">
+            <h6>{{detail.value}}</h6>
+        </div>
+    </div>
+</div>

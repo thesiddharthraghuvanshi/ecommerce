@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { DashboardComponent } from './modules/dashboard/dashboard.component';
 import { BottomNavbarComponent } from './shared/navbars/bottom-navbar/bottom-navbar.component';
 import { TopNavbarComponent } from './shared/navbars/top-navbar/top-navbar.component';
+import { LogoComponent } from './shared/components/logo/logo.component';
 
 
 
@@ -10,9 +11,11 @@ import { TopNavbarComponent } from './shared/navbars/top-navbar/top-navbar.compo
   declarations: [],
   imports: [
     CommonModule,
+    NgModule,
     DashboardComponent,
     BottomNavbarComponent,
-    TopNavbarComponent
+    TopNavbarComponent,
+    LogoComponent,
   ]
 })
 export class AppModule { }
