@@ -1,12 +1,13 @@
-<div class="w-100 text-center">
-    <h1 class="my-5">Shop Collections</h1>
-    <div class="d-flex justify-content-between">
+<div class="w-sm-100 text-center">
+    <!-- <h1 class="my-5">Shop Collections</h1>
+    <div class="d-flex flex-wrap justify-content-between">
         <div *ngFor="let item of items; index as i">
             <app-item [item]="item"></app-item>
         </div>
-    </div>
+    </div> -->
+    <app-item-detail></app-item-detail>
 </div>
-<div class="w-100 text-center">
+<!-- <div class="w-100 text-center">
     <h1 class="my-5">What's New</h1>
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -20,24 +21,12 @@
         <div class="carousel-inner">
             <div class="carousel-item active w-100">
                 <img src="../../../assets/images/new1.webp" class="w-auto" alt="#">
-                <div class="carousel-caption d-none d-md-block">
-                    <!-- <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p> -->
-                </div>
             </div>
             <div class="carousel-item w-100">
                 <img src="../../../assets/images/new2.webp" class="w-auto" alt="#">
-                <div class="carousel-caption d-none d-md-block">
-                    <!-- <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p> -->
-                </div>
             </div>
             <div class="carousel-item w-100">
                 <img src="../../../assets/images/new1.webp" class="w-auto" alt="#">
-                <div class="carousel-caption d-none d-md-block">
-                    <!-- <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p> -->
-                </div>
             </div>
         </div>
         <button class="carousel-control-prev bg-dark" type="button" data-bs-target="#carouselExampleCaptions"
@@ -51,5 +40,5 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-</div>
+</div> -->
 <app-contact-us></app-contact-us>

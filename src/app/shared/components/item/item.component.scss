@@ -2,3 +2,15 @@
     font-family: "courier new", monospace;
     font-size: 16px;
 }
+
+.card:hover {
+    cursor: pointer;
+}
+
+.zoom {
+    transition: 0.5s all ease-in-out;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+}
