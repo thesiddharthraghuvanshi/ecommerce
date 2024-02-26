@@ -112,8 +112,8 @@
     <div class="w-100 mt-5 text-center mx-auto">
         <h2>You Might Also Like</h2>
         <div class="d-flex mt-5 flex-wrap justify-content-between">
-            <div *ngFor="let item of items; index as i">
-                <app-item [item]="item"></app-item>
+            <div *ngFor="let product of products; index as i">
+                <app-product [product]="product"></app-product>
             </div>
         </div>
     </div>

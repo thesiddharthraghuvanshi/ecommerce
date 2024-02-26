@@ -1,4 +1,4 @@
-export class Item {
+export class Product {
     title!: string;
     imageUrl!: string;
     viewAll?: string;

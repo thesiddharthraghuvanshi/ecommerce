@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ContactUsComponent } from '../contact-us/contact-us.component';
 import { ContactUsModule } from '../contact-us/contact-us.module';
 import { BrowserModule } from '@angular/platform-browser';
+import { AboutModule } from '../about/about.module';
 
 
 
@@ -11,7 +11,8 @@ import { BrowserModule } from '@angular/platform-browser';
   imports: [
     CommonModule,
     BrowserModule,
-    ContactUsModule
+    ContactUsModule,
+    AboutModule
   ]
 })
 export class DashboardModule { }

@@ -1,14 +1,14 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { ItemComponent } from "../../shared/components/item/item.component";
-import { Item } from '../../shared/models/item.model';
+import { ProductComponent } from "../../shared/components/product/product.component";
+import { Product } from '../../shared/models/product.model';
 
 @Component({
   selector: 'app-item-detail',
   standalone: true,
   templateUrl: './item-detail.component.html',
   styleUrl: './item-detail.component.scss',
-  imports: [CommonModule, ItemComponent]
+  imports: [CommonModule, ProductComponent]
 })
 export class ItemDetailComponent implements OnInit {
 
@@ -17,7 +17,7 @@ export class ItemDetailComponent implements OnInit {
   toggleInfo: boolean = false;
   togglePolicy: boolean = false;
   toggleShipping: boolean = false;
-  items: Item[] = [{
+  products: Product[] = [{
     title: "I'm a product",
     imageUrl: '../../../../assets/images/notebooks.webp',
     price: '$10.00'

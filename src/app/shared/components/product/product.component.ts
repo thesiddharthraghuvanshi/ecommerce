@@ -1,16 +1,16 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { Item } from '../../models/item.model';
+import { Product } from '../../models/product.model';
 
 @Component({
-  selector: 'app-item',
+  selector: 'app-product',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './item.component.html',
-  styleUrl: './item.component.scss'
+  templateUrl: './product.component.html',
+  styleUrl: './product.component.scss'
 })
-export class ItemComponent {
-  @Input() item: Item = {
+export class ProductComponent {
+  @Input() product: Product = {
     title: '',
     imageUrl: '',
     viewAll: '',

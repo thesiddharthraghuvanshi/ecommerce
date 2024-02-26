@@ -1,8 +1,0 @@
-<div class="card" style="width: 18rem;">
-    <img src="{{item.imageUrl}}" class="card-img-top zoom" alt="...">
-    <div class="card-body text-white py-5" [style.background-color]="item.viewAll ? 'black' : 'white'">
-        <h5 [style.color]="item.viewAll ? 'white' : 'black'" class="card-title">{{item.title}}</h5>
-        <a href="#" [style.color]="item.viewAll ? 'white' : 'black'" *ngIf="item.viewAll">{{item.viewAll}}</a>
-        <span [style.color]="item.viewAll ? 'white' : 'black'" *ngIf="item.price">{{item.price}}</span>
-    </div>
-</div>
