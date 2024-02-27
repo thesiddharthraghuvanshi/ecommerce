@@ -1,5 +1,9 @@
-.card {
+.card, .modal {
     font-family: "courier new", monospace;
+}
+
+.card:hover {
+    cursor: pointer;
 }
 
 .text-left {
@@ -12,4 +16,12 @@
 
 .font-12 {
     font-size: 12px;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.border-left {
+    border-left: 3px solid black;
 }
