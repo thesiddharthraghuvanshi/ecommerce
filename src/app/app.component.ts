@@ -13,5 +13,5 @@ import { LogoComponent } from "./shared/components/logo/logo.component";
     imports: [RouterOutlet, DashboardComponent, TopNavbarComponent, BottomNavbarComponent, LogoComponent]
 })
 export class AppComponent {
-  title = 'women-ecommerce';
+  title = 'ecommerce';
 }
