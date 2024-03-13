@@ -11,6 +11,10 @@
     width: 300px;
 }
 
+.width-50 {
+    width: 50%;
+}
+
 .w-30 {
     width: 40%;
     text-align: left;
@@ -22,4 +26,30 @@
 
 .toggle:hover {
     cursor: pointer;
+}
+
+#allProducts div{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    #allProducts div{
+        display: block;
+    }
+
+    #prevNext div{
+        display: none;
+    }
+
+    .d-flex {
+        flex-wrap: wrap;
+    }
+
+    .width-50 {
+        width: 100%;
+    }
+
+    .w-30 {
+        width: 100%;
+    }
 }

@@ -1,5 +1,10 @@
-.card, .modal {
+.card,
+.modal {
     font-family: "courier new", monospace;
+}
+
+.card {
+    width: 27rem;
 }
 
 .card:hover {
@@ -24,4 +29,11 @@
 
 .border-left {
     border-left: 3px solid black;
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 100%;
+        margin-top: 10px;
+    }
 }

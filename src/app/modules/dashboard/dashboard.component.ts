@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { EmailBoxComponent } from "../../shared/components/email-box/email-box.component";
-import { ContactUsComponent } from "../contact-us/contact-us.component";
 import { ProductComponent } from "../../shared/components/product/product.component";
 import { CommonModule } from '@angular/common';
 import { ItemDetailComponent } from "../item-detail/item-detail.component";
@@ -13,7 +12,7 @@ import { BlogComponent } from "../blog/blog.component";
     standalone: true,
     templateUrl: './dashboard.component.html',
     styleUrl: './dashboard.component.scss',
-    imports: [EmailBoxComponent, ContactUsComponent, ProductComponent, CommonModule, ItemDetailComponent, AboutComponent, BlogComponent]
+    imports: [EmailBoxComponent, ProductComponent, CommonModule, ItemDetailComponent, AboutComponent, BlogComponent]
 })
 export class DashboardComponent {
     products: Product[] = [{

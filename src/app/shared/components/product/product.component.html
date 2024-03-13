@@ -1,8 +1,10 @@
-<div class="card" style="width: 18rem;">
-    <img src="{{product.imageUrl}}" class="card-img-top zoom" alt="...">
+<div class="card">
+    <img routerLink="/item-detail" src="{{product.imageUrl}}" class="card-img-top zoom" alt="...">
     <div class="card-body text-white py-5" [style.background-color]="product.viewAll ? 'black' : 'white'">
         <h5 [style.color]="product.viewAll ? 'white' : 'black'" class="card-title">{{product.title}}</h5>
-        <a href="#" [style.color]="product.viewAll ? 'white' : 'black'" *ngIf="product.viewAll">{{product.viewAll}}</a>
-        <span [style.color]="product.viewAll ? 'white' : 'black'" *ngIf="product.price">{{product.price}}</span>
+        <a routerLink="/shop" [style.color]="product.viewAll ? 'white' : 'black'" *ngIf="product.viewAll">{{product.viewAll}}</a>
+        <span class="d-block" [style.color]="product.viewAll ? 'white' : 'black'"
+            *ngIf="product.price">{{product.price}}</span>
+        <button *ngIf="product.cartButton" type="button" class="btn btn-dark border mt-2">Add to Cart</button>
     </div>
 </div>

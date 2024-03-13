@@ -1,0 +1,13 @@
+<div class="w-100 d-flex text-left">
+    <div class="w-25">
+        <app-filters-bar></app-filters-bar>
+    </div>
+    <div class="w-75 m-4">
+        <h1>All Products</h1>
+        <div class="d-flex flex-wrap justify-content-between">
+            <div *ngFor="let product of products; index as i" class="mt-3">
+                <app-product [product]="product"></app-product>
+            </div>
+        </div>
+    </div>
+</div>

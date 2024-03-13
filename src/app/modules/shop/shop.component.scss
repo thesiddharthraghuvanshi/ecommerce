@@ -1,0 +1,16 @@
+.w-100,
+.w-sm-100 {
+    font-family: "courier new", monospace;
+    font-size: 16px;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .w-25 {
+        display: none;
+    }
+}
